@@ -1,0 +1,35 @@
+@import '../home/FrontPage.scss';
+
+.login {
+  height: 100vh;
+
+  Form {
+    height: 85vh;
+    padding: 0 3rem;
+  }
+}
+
+.login__title {
+  display: flex;
+  flex-direction: column;
+
+  .title h1 {
+    font-size: 3rem;
+    margin-bottom: 3rem;
+  }
+
+  .close {
+    display: flex;
+    justify-content: flex-end;
+    padding: 3rem 0;
+
+    .closeBtn {
+      color: #000;
+      font-size: 3rem;
+
+      &:hover {
+        color: #cc0d0d;
+      }
+    }
+  }
+}

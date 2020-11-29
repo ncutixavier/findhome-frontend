@@ -1,0 +1,176 @@
+$primary-color: #1566a2;
+$main-color: #fff;
+$secondary-color: #0a3a4f;
+
+.flex-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 2rem;
+  color: #af601a;
+  border: 1px solid #af601a;
+  padding: 0.5rem;
+  letter-spacing: 3px;
+  border-radius: 0.5rem;
+}
+
+.frontpage {
+  align-items: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  background-color:#effffe;
+  padding: 0 8rem;
+
+  .logo-container {
+    width: 150px;
+    height: 50px;
+  }
+
+  .logo a img {
+    width: 100%;
+  }
+
+  .navlist {
+    span {
+      margin: 0 1rem;
+      font-size: 1.5rem;
+
+      &:hover {
+        color: $primary-color;
+        cursor: pointer;
+      }
+    }
+  }
+
+  @media (min-width: 768px) {
+    img {
+      animation: rightToLeft 5s ease-in-out;
+    }
+
+    .front {
+      justify-content: center;
+      align-items: center;
+
+      h1 {
+        font-size: 4rem;
+        letter-spacing: 2px;
+        animation: upToBottom 4s ease-in-out;
+      }
+
+      p {
+        margin-top: 2rem;
+        font-size: 2rem;
+        line-height: 2;
+        color: #000;
+      }
+
+      button {
+        font-size: 2rem;
+        padding: 1rem 5rem;
+        margin-top: 4rem;
+        background-color: $secondary-color;
+        border: 1px solid $primary-color;
+        color: $main-color;
+        animation: bottomToUp 4s ease-in-out;
+        cursor: pointer;
+        transition: all 0.4s;
+
+        &:hover {
+          background-color: #fff;
+          color: $secondary-color;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .frontpage {
+    padding: 4rem 0;
+    height: 85vh;
+    justify-content: center;
+    align-items: center;
+
+    div > img {
+      display: none;
+    }
+  }
+
+  .front {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10rem;
+
+    h1 {
+      font-size: 3rem;
+      letter-spacing: 2px;
+      padding: 0 2rem;
+      text-align: center;
+      font-weight: bold;
+      animation: upToBottom 5s ease-in-out;
+    }
+
+    p {
+      font-size: 1.5rem;
+      line-height: 2;
+      color: #000;
+      width: 70%;
+      text-align: center;
+      margin: 2rem 0;
+    }
+
+    button {
+      background-color: $secondary-color;
+      border: 1px solid $primary-color;
+      color: $main-color;
+      font-size: 1.7rem;
+      padding: 0.7rem 3.7rem;
+      margin: 3rem;
+      animation: bottomToUp 5s ease-in-out;
+
+      &:hover {
+        background-color: $main-color;
+        color: #000;
+      }
+    }
+  }
+}
+
+@keyframes bottomToUp {
+  0% {
+    opacity: 0;
+    transform: translateY(6rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes upToBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(-6rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes rightToLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(6rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
