@@ -4,6 +4,7 @@
 [![Coverage Status](https://coveralls.io/repos/github/ncutixavier/findhome-frontend/badge.svg?branch=develop)](https://coveralls.io/github/ncutixavier/findhome-frontend?branch=develop)
 [![Maintainability](https://api.codeclimate.com/v1/badges/842cdb5a1683912c5b45/maintainability)](https://codeclimate.com/github/ncutixavier/findhome-frontend/maintainability)
 [![Test Coverage](https://api.codeclimate.com/v1/badges/842cdb5a1683912c5b45/test_coverage)](https://codeclimate.com/github/ncutixavier/findhome-frontend/test_coverage)
+![example workflow name](https://github.com/ncutixavier/findhome-frontend/workflows/Find-Home%20CI/badge.svg)
 
 # Deployment
 [Link](https://fhome-staging.herokuapp.com/)
